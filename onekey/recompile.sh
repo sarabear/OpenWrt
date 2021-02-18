@@ -19,7 +19,7 @@ echo
 clear
 
 rm -Rf openwrt/common openwrt/files openwrt/devices
-svn co https://github.com/sarabear/Actions-OpenWrt/trunk/devices openwrt/devices
+svn co https://github.com/sarabear/OpenWrt/trunk/devices openwrt/devices
 cd openwrt
 
 [ $(grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/') == generic ] && {
